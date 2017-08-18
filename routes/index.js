@@ -18,7 +18,7 @@ router.get('/:date', function(req,res){
        
        if(parsed){
        	  var date_obj=new Date(parsed);
-       	  var naturalDate=" "+date_obj.getDate()+" "+months[date_obj.getMonth()]+", "+date_obj.getFullYear();
+       	  var naturalDate=date_obj.getDate()+" "+months[date_obj.getMonth()]+", "+date_obj.getFullYear();
        	  var unixDate=date_obj.getTime()/1000;
        }
        else{
@@ -28,7 +28,7 @@ router.get('/:date', function(req,res){
 	}
 	else{
 		var date_obj=new Date(1000*date);
-       	var naturalDate=" "+date_obj.getDate()+" "+months[date_obj.getMonth()]+", "+date_obj.getFullYear();
+       	var naturalDate=date_obj.getDate()+" "+months[date_obj.getMonth()]+", "+date_obj.getFullYear();
 
         var unixDate=date_obj.getTime()/1000;
 		 
