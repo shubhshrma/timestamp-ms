@@ -11,9 +11,14 @@ a {
 p{
 	font-size:20px;
 }
-
+h2{
+	padding-bottom: 30px;
+}
 .jumbotron{
 	border-radius: 20px;
 	margin-top: 30px;
 	
+}
+.eg{
+	margin-left: 20px;
 }
